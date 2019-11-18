@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pic{
+            width:300px;
+            height: 400px;
+            overflow: hidden;
+        }
+    .pic img{
+        width: 300px;
+        height: 400px;
+        transition: all 1s ease;
+        /* 过渡缓冲效果，为了让图片有个逐渐放大的过程，看起来不会特别僵硬  属性名称超过一个以上，需要用all 代表所有的属性名称*/
+    }
+    .pic:hover img{
+        transform: scale(1.5);
+        opacity: .7;
+        /* 透明度 */
+    }
+    </style>
+</head>
+<body>
+    <!-- 过渡动画 transition
+    过渡动画的属性名称    all
+    过渡动画的持续时间    时间越长，动画越慢，反之相反
+    过渡动画的运动曲线  ease  匀速   linear 线性
+    过渡动画的延迟时间
+
+
+
+变换  transform
+缩放 scale(0.8)  scale(1.2)
+位移  translate(x,y), translateX()  ,translateY()
+旋转  rotate(45deg)
+
+transform:translate() rotate() scale()
+
+定位 position
+绝对定位 position:absolute 遮盖 覆盖 重叠
+相对定位 position:relative 用来作为绝对定位的参照物
+固定定位 position:fixed 固定不动
+默认     position:static  去掉复用样式的的定位属性
+
+相同点 ：
+方位 top bottom left right
+层级 z-index
+
+区别：
+是否脱离文档流 脱离：绝对定位和固定定位   不脱离：相对定位
+参照物  固定定位：窗口  相对定位：自己原本的位置
+绝对定位：父元素  有没有属性position 有，就参照这个父元素。如果没有 继续往上查找，直到body浏览器窗口
+
+
+利用定位实现水平垂直居中  三种写法
+
+定位：50%。不是完全在正中间，需要反向移动宽高的一半
+1.margin的负值 （最常用）
+2.transform(位移)
+3.定位的四个方位0,margin:0 auto(手机移动端)
+ddddd
+
+第一个特效：鼠标移动动画缩放 -->
+    <div class="pic">
+        <img src="images/2.jpg" alt="">
+    </div>
+
+
+<!-- 第二个特效：鼠标移动到图片上，图片上会出现一个遮罩层（定位poosition）  参考index2 -->
+
+<!-- 
+第三个特效：鼠标移动到元素上，遮罩层，以一定角度旋转覆盖（百度边栏）
+参考index3
+    transform-origin:left top 固定点
+解决文字旋转方法
+1.没加鼠标效果之前。就让文字先倒过来，这样旋转后 ，文字正常
+2.鼠标效果上，直接给默认倒过来的文字，在给文字加一个角度旋转的属性，让文字回归正常
+
+第四个特效 ：鼠标移动到文字上，下边框线从中间向俩端开的特效
+d->
+
+
+
+</body>
+</html>

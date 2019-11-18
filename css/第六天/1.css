@@ -1,0 +1,78 @@
+body{background-color: gray;}
+.register {
+    margin: 0 auto;
+    width: 720px;
+    height: 394px;
+    background-color: white;
+}
+
+span{
+    display: block;
+    width: 720px;
+    height: 10px;
+}
+
+.register-one {
+    width: 720px;
+    height: 35px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* :focus 获取焦点：鼠标移动到input框里 outline 外边线 -webkit- webkit内核的浏览器的前缀
+-moz-*/
+input {
+    outline: 0;
+    border: 1px solid #000;
+    width: 450px;
+    height: 35px
+}
+
+input:focus {
+    border: 1px solid red;
+}
+
+.register-two {
+    width: 50px;
+    height: 10px;
+    float: left;
+    padding: 10px;
+}
+
+.register-three {
+    display: block;
+    background-color: blue;
+    width: 455px;
+    height: 60px;
+}
+
+.register-four {
+    width: 40px;
+    height: 20px;
+}
+
+.register-five {
+    width: 200px;
+}
+
+.register-six {
+    width: 245px;
+    height: 40px;
+}
+.register-seven {
+    width: 600px;
+    height: 35px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.register-eight {
+    width: 575px;
+    height: 60px;
+    padding: 5px;
+    margin: 0 auto;
+    
+}

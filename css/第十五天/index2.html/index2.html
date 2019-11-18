@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 媒体查询的作用：让不同的移动设备达到不同的样式效果
+        是有一定条件的样式覆盖
+        注意：在覆盖时尽量保证选择器的权重一致，这样条件达到后可以保证完全覆盖
+        @media  screen  and (){}  可以简写为@media screen  （条件）{css代码}
+        每个关键词之间一定要用空格隔开，否则会导致媒体查询语法不起作用 */
+
+        /* transiton:过渡，缓冲动画 控制的是CSS属性 
+    【四个:过渡动画的属性名称   持续时间  运动曲线  延迟时间】
+    
+    animation: 关键帧动画 @keyframes  
+    【八个: 动画的名称  持续时间 运动曲线 延迟时间 运动次数  运动方向 运动状态 运动结束时的状态】
+
+    tranform:变换 - 旋转、位移、缩放 配合上面的动画使用
+   【旋转 rotate 位移 translate 缩放 scale】 */
+
+
+
+
+    .box{
+        width: 300px;
+        height: 300px;
+        background: blue;
+        border-radius: 50%;
+    }
+    @media screen and (max-width: 414px){
+        .box{background: red;}
+    }
+   
+ 
+    @media screen and (max-width: 375px){
+        .box{background: greenyellow;}
+    }
+ 
+  
+    @media screen and (max-width: 320px){
+        .box{background: blue;}
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

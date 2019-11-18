@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* display: flex;加在父元素身上，控制子元素的排列方式，默认水平排列
+        display: flex;就不需要再用浮动属性 */
+        /* box-sizing:border-box
+        宽度=width{padding和border已经算过了}
+        高度=height{padding和border已经算过了} 
+        元素在一行显示
+        PC浮动
+        手机端  浮动 flex
+        
+        */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .phone-col {
+            margin-left: -10px;
+            display: flex;
+            padding: 0 10px;
+        }
+
+        .col{
+            padding-left: 10px;
+            box-sizing: border-box;
+            width: 33.33%;
+        }
+
+        .col img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="phone-col">
+        <section class="col">
+            <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                alt="">
+        </section>
+        <section class="col">
+            <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                alt="">
+        </section>
+        <section class="col">
+            <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                alt="">
+        </section>
+    </main>
+    <main class="phone-col">
+            <section class="col">
+                <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                    alt="">
+            </section>
+            <section class="col">
+                <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                    alt="">
+            </section>
+            <section class="col">
+                <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                    alt="">
+            </section>
+            <section class="col">
+                    <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                        alt="">
+                </section>
+        </main>
+        <main class="phone-col">
+                <section class="col">
+                    <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                        alt="">
+                </section>
+                <section class="col">
+                    <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                        alt="">
+                </section>
+                <section class="col">
+                    <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                        alt="">
+                </section>
+                <section class="col">
+                        <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                            alt="">
+                    </section>
+                    <section class="col">
+                            <img src="https://img11.360buyimg.com/mobilecms/s372x372_jfs/t30136/32/117348327/154009/fff2b2c7/5be86252N868b674d.jpg!q70.dpg.webp"
+                                alt="">
+                        </section>
+            </main>
+    
+</body>
+
+</html>

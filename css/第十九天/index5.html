@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 200px;
+            background: gray;
+          
+        }
+        .box em{
+            display: inline-block;
+        width: 33px;
+        height: 31px;
+       
+        background: orange;
+        overflow: hidden;
+        }
+    .box i{
+        display: inline-block;
+        width: 33px;
+        height: 31px;
+        background: url(images/1.png) no-repeat -253px -199px;
+        transition: all 1s ease;
+    }
+    .box em::after{
+        content: "";
+        display: inline-block;
+        width: 33px;
+        height: 31px;
+        background: url(images/1.png) no-repeat -253px -199px;
+        transition: all 1s ease;
+    }
+  
+  
+    .box em:hover::after{
+        transform:translateY(-31px);
+    }
+    .box em:hover i{
+        transform:translateY(-31px);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <em>
+            <i></i>
+        </em>
+        将军令
+    </div>
+</body>
+
+</html>

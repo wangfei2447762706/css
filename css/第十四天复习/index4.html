@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 固定定位   滚动条滚动时，模块固定不动，参照整个浏览器窗口来进行定位（钉子户）  position:fixed */
+        /* 相对定位 不改变正常文档流的  用处；配合使用方位（top, right, bottom, left,）和-z-index使用
+        position: relative;参照自己原来的坐标位置 */
+        /* 绝对定位：脱离文档流，不占位
+        重叠 遮盖 覆盖都是绝对定位效果 
+        参照物是他的父容器，也就是包裹他的元素，一半给这个父元素加个相对定位*/
+        .box {
+            width: 300px;
+            height: 400px;
+            background: red;
+            position: fixed;
+            top:50%;
+            right: 10px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 400px;
+            background: blue;
+        
+        
+        }
+        .box2 {
+            width: 300px;
+            height: 400px;
+            background: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box3{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box3">
+    <div class="box"></div>
+    <p>ssasaasassa</p>
+    <p>ssasaasassa</p>
+    <p>ssasaasassa</p>
+    <p>ssasaasassa</p>
+    <div class="box1">
+    </div>
+    <div class="box2"></div>
+    <div style="height: 300px;"></div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+/* 块居中 公用样式 */
+.container-md {
+    width: 1204px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 84px;
+    /* overflow: hidden; */
+}
+
+/* logo */
+.top-logo {
+    float: left;
+    width: 176px;
+    height: 52px;
+    background: url(../images/Layer\ 11.png) no-repeat;
+    margin-top: 16px;
+}
+
+/* nav */
+.nav {
+    margin-left: 63px;
+    float: left;
+}
+
+.nav li {
+    float: left;
+    line-height: 84px;
+
+}
+
+.nav li a {
+    color: #727171;
+    padding: 0 28px;
+}
+
+.user-center li a {
+    color: #727171;
+}
+
+/* .shopping-cart */
+.shopping-cart {
+    float: right;
+    margin-top: 31px;
+    width: 70px;
+    height: 25px;
+    position: relative;
+}
+
+.shopping-cart span {
+    width: 60px;
+    height: 20px;
+    line-height: 25px;
+    color: #727171;
+    margin-left: 5px;
+}
+
+.shopping-cart img {
+    float: left;
+    width: 24px;
+    height: 22px;
+}
+.header .shopping-cart .laeo{
+    z-index: 9;
+    width: 300px;
+    height: 185px;
+    background: blue;
+    position:absolute;
+    top: 27px;
+    right:-150px;
+    display: none;
+}
+.shopping-cart:hover .laeo{
+    display: block;
+}
+
+
+/* .user-center */
+.user-center {
+    float: right;
+    margin-left: 39px;
+}
+
+.user-center li {
+    float: left;
+    line-height: 84px;
+}
+
+.user-center li a {
+
+    padding-right: 31px;
+}
+
+/* 汇总：
+在一行显示：利用float。父元素浮动。，子元素不会继承，子元素要在一行显示需要单独添加浮动属性--浮动既不会继承也不会传递。
+居中：
+文字垂直居中   height=line-height
+块元素垂直居中   margin-top=(大容器height-它的height)/2
+
+文字水平居中  text-align:center
+块元素水平居中 width(宽度不能是百分百)margin:0 auto  */
+
+/* 轮播图 */
+/* swiper */
+.swim {
+    height: 360px;
+    position: relative;
+}
+
+.swim img {
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    /* 定位：重复，覆盖布局
+    绝对定位需要加参照物，参照物一般给到父元素身上，如果父元素没有，会往上查找，直到找到body为止,这样就会以整个浏览器窗口为参照物了
+    一般给父元素加一个属性 position:relative相对定位
+    */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    /* 背景带透明度可以用rgba,rgb颜色的表示方式.alpha 透明度{0-1} 0.2=.2 */
+    background: rgba(51, 51, 51, .3);
+    z-index: 9;
+}
+
+.layer li {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    height: 71px;
+    line-height: 73px;
+    /* background: #cccccc; */
+    /* border-top: 1px solid white; */
+}
+
+.layer li .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    width: 573px;
+    height: 360px;
+    background: url(../images/3.png) no-repeat;
+    background-size: cover;
+
+}
+
+/* :hover鼠标移在谁的身上，直接在这个元素后面经跟着加一个：hover，中间不能加空格 */
+.layer li:hover .hover {
+    display: block;
+}
+
+/* 实战推荐 */
+.column {
+    margin-top: 40px;
+}
+
+.column ul {
+    margin-left: -60px;
+}
+
+.column ul {
+    margin-top: 21px;
+}
+
+
+.column li {
+    float: left;
+    width: 251px;
+    position: relative;
+    margin-left: 63px;
+}
+
+.column li .pic {
+    width: 251px;
+    height: 141px;
+
+}
+
+.column li .txt {
+    /* z-index：用来提高层级，层级越大，约在上面 */
+    position: relative;
+    z-index: 9;
+    width: 251px;
+    height: 43px;
+
+}
+
+.column li .txt .span1 {
+    text-align: left;
+    color: red;
+}
+
+.column li .txt .span2 {
+    margin-left: 135px;
+
+}
+
+.column li .txt .span2,
+.span1 {
+    line-height: 68px;
+}
+
+
+.col-layer {
+    background: rgba(163, 163, 163, .1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 256px;
+    height: 106px;
+    transition: all 1s ease;
+    line-height: 22px;
+    font-size: 14px;
+    color: #1e1e1e;
+    font-weight: normal
+}
+
+.column li:hover .col-layer {
+    /* bottom 从0-43效果比较僵硬，需添加个缓冲动画  */
+    /* transition:属性名称(all) 持续时间 运动曲线 延迟时间 */
+    bottom: 43px;
+}
+
+/* 知识点汇总:
+浮动  用完浮动，立马吧浮动能够清掉。。  clearfix
+定位： 用定位.一定要加方向，还要照准参照物
+过度动画/transition为了保证移入移出的效果，一般在没有加鼠标事件的元素身上 */
+.what {
+    width: 1527px;
+    height: 440px;
+    background: rgba(243, 245, 247, .1);
+}
+
+.footer {
+    margin-top: 40px;
+    position: relative;
+
+}
+
+.one {
+    margin-right: 15px;
+    width: 224px;
+    height: 380px;
+    float: left;
+}
+
+.two {
+
+    float: left;
+    width: 800px;
+    height: 380px;
+}
+
+.two1,
+.two2 {
+    float: left;
+    width: 394px;
+    height: 380px;
+    margin: 0;
+}
+
+
+.two2 {
+    margin-top: -20px;
+}
+
+.two1 .two11,
+.two12 {
+    width: 382px;
+    height: 180px;
+
+}
+
+.two11,
+.two12 {
+    margin-bottom: 17px;
+}
+
+.two .two21,
+.two22 {
+
+    width: 297px;
+    height: 180px;
+}
+
+.three {
+    width: 300px;
+    height: 380px;
+    float: left;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.three .tu img {
+    width: 300px;
+    height: 139px;
+}
+
+.pianfu {
+    width: 251px;
+    height: 95px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.duanlu {
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+    line-height: 30px;
+}
+
+.duanlu li {
+    list-style: outside;
+}
+
+.pianfu p {
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.pianfu h2 {
+    color: #1E1E1E;
+}
+
+.jiewei {
+    width: 1527px;
+    height: 272px;
+    background: rgba(46, 46, 46, 1);
+    box-shadow: 0px -2px 0px 0px rgba(2, 2, 2, 1);
+}
+
+.jiewei .four {
+    width: 1264px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.four1 {
+    margin-top: 54px;
+    margin-left: 30px;
+    float: left;
+    width: 124px;
+    font-size: 14px;
+    font-family: CTHeiTiSJ;
+    color: rgba(163, 163, 163, 1);
+    line-height: 30px;
+    text-align: center;
+}
+
+.four1 h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.four11 {
+    width: 800px;
+    height: 272px;
+    float: left;
+}
+
+.four22 {
+    float: left;
+    width: 295px;
+    height: 120px;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.four221{
+    margin-bottom: 20px;
+}
+.four223 {
+    position: relative;
+    float: left;
+}
+
+.four2222 {
+    position: absolute;
+    top: -200px;
+    left: -70px;
+    display: none;
+}
+
+.four223:hover .four2222 {
+    display: block;
+}
+
+/* 最后结尾 */
+.foob {
+    width: 1527px;
+    height:200px;
+    background:#5B5C5C;
+}
+
+.foob-one {
+    margin: 0 auto;
+    width: 800px;
+    height: 170px;
+  
+}
+.foob-two{
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(163, 163, 163, 1);
+    line-height: 30px;
+    text-align: center;
+   padding-top: 50px;
+}

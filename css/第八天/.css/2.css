@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    /* background-image:url('https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    float: left;
+    width: 25%;
+    height: 360px;
+    border-left: 5px solid white;
+    box-sizing: border-box;
+    ;
+}
+
+/* 负值往左移，整体往右移，把边框的间距隐藏起来  主体{负值：设置的边框} */
+.main {
+    margin-left: -5px;
+}
+
+.item-1 {
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg);
+}
+
+.item-2 {
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg);
+}
+
+.item-3 {
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg);
+}
+
+.item-4 {
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg);
+}
+
+.program {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.program-aaa {
+    width: 900px;
+    height: 120px;
+    margin: auto auto;
+}
+
+.program-one,
+.program-two,
+.program-three {
+    width: 33.33%;
+    height: 100px;
+    float: left;
+    margin-top: 33px;
+    overflow: hidden;
+
+}
+
+.wenzi {
+    width: 200px;
+    float: right;
+    padding: 0 8px;
+}
+
+.program-one,
+.program-two,
+.program-three,
+span {
+
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.program-one .tu-one {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-wechat.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.program-two .tu-two {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-rp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.program-three .tu-three {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-credit.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ending {
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.ending-aaa {
+    width: 900px;
+    height: 500px;
+    margin: auto auto;
+}
+
+.ending-aaa .font {
+    float: left;
+    width: 180px;
+    height: 35px;
+    background-image: url(https://mobike.com/cn/assets/themes/moby/img/logo-text.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.ending-aaa ul {
+    float: left;
+    width: 200px;
+    height: 180px;
+}
+
+.ending-aaa li {
+    width: 210px;
+}
+
+
+.ending-bbb {
+    width: 600px;
+    height: 200px;
+    float: right;
+    padding-top: 40px;
+}
+
+.ending-one,
+.ending-two,
+.ending-three,
+.ending-four,
+h3 {
+    margin-bottom: 20px;
+
+}
+
+.ending-one,
+.ending-two,
+.ending-three,
+.ending-four,
+ul {
+    float: left;
+    width: 150px;
+}
+
+.ending-one,
+.ending-two,
+.ending-three,
+.ending-four,
+li {
+    line-height: 40px;
+}
+
+.remark {
+    width: 100%;
+    overflow: hidden;
+}
+
+.remark-aaa {
+    width: 900px;
+    margin: auto auto;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 背景渐变：
+        线性渐变  linear-gradient(方位，颜色%，颜色%)
+        to bottom从上到下
+        to top 从下到上
+        to left 
+        to right
+        to left top
+        deg 角度
+         径向渐变 */
+        body{
+            background:linear-gradient(to bottom, black 50%,white 50%)
+        }
+        p{background:radial-gradient(redd,green);
+            width: 300px;
+            height: 300px;
+
+        }
+
+
+
+        .text{
+            font-size: 200px;
+            font-weight: bold;
+            background:url(3.jpg) no-repeat center;
+            /* 向文字向外进行裁剪，保留文字内的部分背景 */
+            -webkit-background-clip: text;
+            color: transparent;
+            animation:txt 0.3s ease infinite;
+            
+        }
+@keyframes txt{
+    0%{background-position: 0 0 ; transform: rotate(
+        0deg
+    );}
+   100%{background-position:-500px -50px; transform: rotate(
+        180deg);}
+    
+}
+h1{
+    font-size: 300px;
+    background:linear-gradient(45deg ,red,blue,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="text">
+        疾风剑豪
+    </div>
+
+ <p></p>
+ <h1>京东直播</h1>
+</body>
+</html>

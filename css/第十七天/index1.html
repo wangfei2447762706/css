@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    html{
+        font-size: 100px;
+
+    }
+    .box{
+        width: 3rem;
+        height: 3rem;
+        background: black;
+    }
+    </style>
+</head>
+<body>
+    <!-- 常用单位 px % em deg rem
+    rem单位是一个参照单位，根据根元素html的字体大小 font-size:16px
+    1rem=16px
+        为了方便计算 ，字体默认大小是12px,所以我们一般吧html的字体设置为100px,
+
+        为了让所有的机型都能达到最好的用户体验效果；屏幕大，rem的值越大，页面元素越大，反之rem的值越小， 所以我们需要引入一段动态判断的rem的脚本
+-->
+
+
+<div class="box"></div>
+<script>
+    // 动态判断rem的大小
+   function refreshRem() {
+            var desW = 750,
+                winW = document.documentElement.clientWidth,
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+</script>
+</body>
+</html>

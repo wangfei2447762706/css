@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pic {
+            width: 400px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+        .pic img{
+            width: 100%;
+            height: 100%;
+        }
+        .mask{
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            top: 200px;
+            left: 0;
+            transition: all 1s ease;
+        }
+        .pic:hover .mask{
+            top: 0;
+        }
+      
+
+        .pic1 {
+            width: 400px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid black;
+            margin-top: 10px;
+            box-sizing: border-box;
+            /* 怪异盒子模型  计算好宽高 */
+        }
+        .pic1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .maak{
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            top:200px;
+            left: 0;
+            transition: all 1s ease;
+            background: rgba(0,0,0,.4);
+            color:#fff;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+            font-family: 宋体;
+
+        }
+        .pic1:hover .maak{
+            top: 0;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+    <div class="pic">
+        <img src="images/6.jpg" alt="">
+        <div class="mask">
+            <img src="images/4.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+    <div class="pic1">
+        <img src="images/5.jpg" alt="">
+        <div class="maak">
+            空之女王&nbsp;琪亚娜
+        </div>
+    </div>
+</body>
+
+</html>

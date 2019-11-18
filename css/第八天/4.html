@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-bottom: 40px;
+        }
+
+        .black {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            margin-top: 80px;
+        }
+
+        /* margin的重叠问题：
+        一个容器有margin-bottom，一个容器有margin-top;俩个容器之间的外间距是其中较大值，不是相加的结果
+        在其中一个这个容器身上包上一个div 给这个div加一个属性（这个属性满足BFC触发条件，一般使用 overflow：hidden） */
+        /* 遵循的规则是
+        垂直方向上的距离由margin决定。（完整的说法是：属于同一个BFC的两个相邻Box的margin会发生重叠（塌陷），与方向无关。）
+        BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面元素，反之亦然 */
+
+        /* 底层原理  BFC：独立的封闭空间 */
+        .box {
+            overflow: hidden;
+        }
+
+        .caa {
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .cbb {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+
+        .ccc {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin-top: 50px;
+        
+        }
+
+        .cdd {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red"></div>
+
+    <div class="box">
+        <div class="black"></div>
+    </div>
+    <div class="caa">
+        <div class="cdd">
+            <div class="cbb">
+                <div class="ccc"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+    background: url(http://b-ssl.duitang.com/uploads/item/201804/28/20180428053550_yyevb.thumb.224_0.gif) no-repeat center center;
+    background-size: cover;
+
+}

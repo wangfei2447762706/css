@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 方位：顺时针 上 右 下 左 */
+        /* margin：方位如下
+        padding-top  上
+        padding-right  右
+        padding-buttom  下
+        padding-left     左 */
+        /* padding 和 margin 的区别：
+        padding 会让元素的实际显示效果变大；
+        margin 不会让元素的实际显示效果变大；和其他元素产生一个间距
+        正常盒子计算公式：box-sizing:content-box
+        实际宽度=width+padding-left/right+border-left/right
+        实际高度=height+padding-top/buttom+border-top/buttom */
+/* 
+        怪异盒子计算公式：box-sizing:border-box;
+        实际宽度=width （实际宽度） padding和border已经计算
+        实际高度=height(实际高度) */
+        .box1 {
+            padding: 10px;
+            width: 400px;
+            height: 400px;
+            background-color:
+                red;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

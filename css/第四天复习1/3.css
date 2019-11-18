@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.wenzi {
+    width: 1226px;
+    height: 58px;
+    margin: 0 auto;
+    line-height: 58px;
+    font-size: 20px;
+    background: gray;
+}
+
+.wenzi p {
+    float: left;
+}
+
+.hengtiao {
+    margin: 0 auto;
+    width: 1226px;
+    height: 120px;
+    padding: 20px;
+}
+
+.hengtiao a img {
+    width: 1226px;
+}
+
+.phone-content {
+    width: 1226px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.phone-pic {
+    float: left;
+}
+
+.phone-pic img {
+    width: 234px;
+    height: 614px;
+}
+
+.phone-col {
+    float: left;
+    width: 992px;
+}
+
+.phone-item {
+    float: left;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0 20px 0;
+    margin: 0 0 14px 14px;
+    background-color: white;
+    text-align: center;
+}
+
+.phone-item:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+
+.phone-item img {
+    width: 160px;
+    height: 160px;
+}
+
+.phone-item a {
+    text-decoration: none;
+}
+
+.electric-content .phone-pic img {
+    height: 300px;
+}
+
+.electric-content .phone-pic a {
+    width: 234px;
+    height: 300px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.electric-content .weiye-item {
+    height: 105px;
+}
+
+
+
+.electric-content .houye-item {
+    height: 100px;
+}
+
+.electric-content .weiye-item a {
+    display: block;
+    margin: 0 0 14px 14px;
+}
+
+.electric-content .weiye-item img {
+    height: 60px;
+}
+
+.electric-content .houye-item a p {
+    font-size: 20px;
+
+}
+
+.shipin {
+    margin: 0 auto;
+    background-color: white;
+    height: 357px;
+    width: 1226px;
+}
+
+.shipin-one {
+    float: left;
+    width: 280px;
+    height: 357px;
+    padding: 40px 0 0 20px;
+}
+
+.shipin-one h3 {
+    text-align: center;
+    padding: 24px;
+    font-size: 20px;
+}
+
+.shipin-one a {
+    text-decoration: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .bic{width: 100%;}
+    .pic{
+        float: left;
+    width: 33.33%;
+    height: 1000px;
+    background-color: bisque;
+    background-image: url(404.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: inherit;
+    }
+    /* 以上可以合并成一个复合属性 */
+    /* 顺序 背景颜色，背景图片，背景平铺，背景位置，背景滚动或固定 */
+   .pic{background-size:contain;} 
+    </style>
+</head>
+<body>
+    <div class="bic">
+    <div class="pic"></div>
+    <div class="pic"></div>
+
+    <div class="pic"></div>
+
+    </div>
+</body>
+</html>

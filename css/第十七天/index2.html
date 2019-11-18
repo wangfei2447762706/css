@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- 引入动画插件自带的CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/1.jpg" alt="">
+                <h2>志玲小姐姐</h2>
+            </div>
+            <div class="swiper-slide"> <img src="images/2.jpg" alt="">
+                <h2>志玲小姐姐</h2>
+            </div>
+            <div class="swiper-slide"> <img src="images/3.jpg" alt="">
+                <h2>志玲小姐姐</h2>
+            </div>
+            <div class="swiper-slide"> <img src="images/4.jpg" alt="">
+                <h2>志玲小姐姐</h2>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    <script src="js/swiper.min.js"> </script>
+
+
+    <!-- 引入初始化参数配置 -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+            loop: true, // 循环模式选项
+            effect: "cube",//切换特效
+            // autoplay:true,//自动播放
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,//用户操作之后，自动播放效果结束 ，轮播效果 true暂停， false开启
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })        
+    </script>
+</body>
+
+</html>

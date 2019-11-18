@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+.main{
+    width: 100%;
+    height: 100%; 
+}
+.main>div{
+    width: 100%;
+    height: 33.33%;
+    position: relative;
+    overflow: hidden;
+}
+/* 每行的列都是相对当前进行的定位，所以每行的三个列的方位值都是一样的 */
+.item{
+    width: 33.33%;
+    height: 100%;
+    position: absolute;
+}
+.one{
+    top: 0;
+    left: 0;
+}
+.two{
+    top: 0;
+    left: 33.33%;
+}
+.three{
+    top: 0;
+    left: 66.66%;
+}
+.main>div img,.main>div video{ 
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50% 0 0 -50%;
+}
+.main>div video{
+    display: none;
+}
+.item:hover video{
+    display: block;
+}
+.main>div img:hover
+
+
+
+/* .first-line{
+    background: green;
+}
+.second-line{
+    background: orange;
+}
+.third-line{
+    background: blue;
+} */

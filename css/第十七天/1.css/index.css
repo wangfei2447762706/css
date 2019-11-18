@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide,
+img{
+    width: 100%;
+}
+.swiper-slide h2{
+    font-size:30px;
+    text-align: center;
+    background: linear-gradient(80deg,red,blue,green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation:tada 1s ease infinite;
+    position: absolute;
+    top: 48px;
+    left:218px;
+}

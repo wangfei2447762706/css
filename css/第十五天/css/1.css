@@ -1,0 +1,123 @@
+/* 版心居中 1080大小 公用代码 */
+.container-md {
+    width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    background: blue;
+}
+
+.header {
+    height: 80px;
+}
+
+.header .logo {
+    float: left;
+    width: 100px;
+    height: 37px;
+    padding-top: 22px;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav li {
+    float: left;
+    line-height: 80px;
+    font-size: 16px;
+}
+
+.nav li a {
+    padding: 8px 20px;
+    color: #fff;
+}
+
+.nav li .layer {
+    display: none;
+    position: absolute;
+    width: 240px;
+    height: 204px;
+    padding-top: 15px;
+    border-radius: 3px;
+    background: red;
+}
+
+.nav li .layer::before {
+    content: "";
+    /* 利用伪元素实现三角形效果 */
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    position: absolute;
+    top: -19px;
+    left: 25px;
+}
+
+.nav li:hover .layer {
+    /* 让隐藏元素显示 */
+    display: block;
+}
+
+/* 响应式适配 */
+@media screen and (max-width:1080px) {
+    .container-md {
+        width: 100%;
+        padding: 0;
+    }
+
+    .header .nav {
+        float: none;
+      
+        display: none;
+    }
+
+    .header {
+        height: auto;
+   
+    }
+
+    .header .logo {
+        width: 100%;
+        float: none;
+        height: 80px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        background:rgba(226,61,14,.9);
+    }
+
+    .header .nav li {
+        width: 100%;
+        float: none;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .nav li .layer,
+    .nav li:hover .layer {
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+    }
+    .menu::before, .menu::after {
+        display: block;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background:#fff;
+        margin:10px 0;
+    }
+    /* 以下效果为模仿JS效果，CSS没点击事件，使用hover事件 */
+   .header:hover  .menu::before{
+       transform-origin: right top;
+       transform: rotate(-45deg);
+   }
+   .header:hover  .menu::after{
+    transform-origin: right bottom;
+    transform: rotate(45deg) translate(1px,6px);
+}
+}

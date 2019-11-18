@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+
+/* 条幅 */
+.banner {
+    width: 1226px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 1226px;
+    height: 120px;
+}
+
+
+
+/* 手机小模块 */
+/* 手机 */
+.phone {
+    width: 1226px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 手机上 */
+.phone-above {
+    width: 1226px;
+    height: 60px;
+    float: left;
+    /* margin:0 auto; */
+}
+
+.phone-above .zuo {
+    font-size: 30px;
+    padding: 5px;
+    width: 600px;
+}
+
+.phone-above .you {
+    width: 600px;
+    font-size: 30px;
+}
+
+.phone-above .you a {
+    float: right;
+}
+
+/* 鼠标移动上去效果 */
+.you a:hover {
+    color: red;
+}
+
+
+/* 手机左 */
+.phone-pic {
+    float: left;
+}
+
+.phone-pic img {
+    width: 234px;
+    height: 614px;
+}
+
+
+
+/* 手机右 */
+.phone-col {
+    float: left;
+    width: 992px;
+}
+
+.phone-item {
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    margin: 0 0 14px 14px;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+
+.phone-item img {
+    width: 160px;
+    height: 160px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 家电 */
+.electric .phone-pic img {
+    height: 300px;
+}
+
+/* 家电左 */
+.electric .phone-pic a {
+    width: 234px;
+    height: 300px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* 家电右 */
+.shang {
+    height: 129px;
+    width: 220px;
+    padding: 7px;
+}
+
+.shang img {
+    height: 60px;
+    width: 60px;
+}
+
+/* 结尾 */
+.end {
+    width: 1226px;
+    background-color: white;
+    height: 299px;
+    margin: 0 auto;
+}
+
+.end-one {
+    padding:5px;
+    float: left;
+    width: 296px;
+    height: 285px;
+}
+
+.end-one p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.end-one a {
+    text-decoration: none;
+}
+
+.end-one img {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 196px;
+}

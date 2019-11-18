@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background: url(../images/timg.gif) no-repeat;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+.content {
+    margin: 0 auto;
+    width: 1000px;
+    height: 38%;
+}
+
+.content-tu {
+    float: left;
+    width: 266px;
+    height: 300px;
+    background: url(../images/sptites7.png) no-repeat;
+    animation: content-tu 5s steps(6) infinite reverse;
+    overflow: hidden;
+}
+
+@keyframes content-tu {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1605px 0;
+    }
+}
+
+.content-one {
+margin-top: 80px;
+    float: right;
+    width: 170px;
+    height: 215px;
+    background: url(../images/3.png) no-repeat;
+    animation: content-one 2s steps(8) infinite,pao 10s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes content-one {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+.west {
+    width: 100%;
+    height: 62%;
+    overflow: hidden;
+
+}
+.west02{
+    margin-left: 150px;
+    float: left;
+    width: 406px;
+    height: 485px;
+    background: url(../images/sprites9.png) no-repeat;
+    animation: west02 3s  steps(16) infinite;
+}
+@keyframes west02{
+    0%{background-position: 0 0;}
+    100%{background-position: -6544px 0;}
+}
+@keyframes pao{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-1000px,0);}
+}
+
+
+.west01 {
+    margin-top: 100px;
+    margin-left: 120px;
+
+    float: left;
+    width: 200px;
+    height: 312px;
+    background: url(../images/4.png) no-repeat;
+    animation: west01 2s steps(10) infinite;
+    overflow: hidden;
+}
+
+
+@keyframes west01 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -2000px 0;
+    }
+}
+.west03{
+    margin-top: 100px;
+    float: left;
+    width: 200px;
+    height: 312px;
+    background: url(../images/4.png) no-repeat;
+    animation: west03 2s steps(10) infinite;
+    overflow: hidden;
+}
+
+
+@keyframes west03 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -2000px 0;
+    }
+}
+.west04{
+    margin-top: 100px;
+
+    float: left;
+    width: 200px;
+    height: 312px;
+    background: url(../images/4.png) no-repeat;
+    animation: west04 2s steps(10) infinite;
+    overflow: hidden;
+}
+
+
+@keyframes west04 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -2000px 0;
+    }
+}

@@ -1,0 +1,66 @@
+p {
+    color: blue;
+}
+
+p.p1 {
+    color: red;
+}
+
+.p1 {
+    color: green;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+    color: chocolate;
+    ;
+    font-size: 15px;
+}
+
+.three,
+.two,
+#one {
+    text-decoration: underline;
+}
+
+.p2 {
+    color: blue;
+}
+
+b {
+    color: green;
+}
+
+span {
+    color: red;
+}
+
+.p2,
+span,
+b {
+    font-size: 20px;
+}
+
+.four {
+    color: blue;
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+
+em {
+    color: red;
+}
+
+li li li {
+    color: green;
+    font-weight: bold;
+}
+li li{    font-weight: bold;
+    color: blue;
+}
+ul ul li{    font-weight: bold;}

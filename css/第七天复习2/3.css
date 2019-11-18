@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cc9;
+    background-image: url(images/5.jpg);
+    
+}
+
+/* 图片 */
+.container {
+    width: 700px;
+    margin: 60px auto 0;
+
+    height: 1000px;
+    position: relative;
+}
+
+.profiles {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.profiles li {
+    float: left;
+    padding: 4px;
+}
+
+.profiles li img {
+    width: 150px;
+    height: 100px;
+}
+
+/* 文字 */
+.wenzi {
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+}
+
+h1 {
+    width: 137px;
+    height: 180px;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+h2 {
+    font-size: 70px;
+    position: absolute;
+    top: 55px;
+    left: 288px;
+}
+
+h3 {
+    position: absolute;
+    top: 185px;
+    left: 260px;
+}
+
+.profiles .last {
+    position: relative;
+    left: 200px;
+}
+
+.container .intro {
+    width: 195px;
+    position: absolute;
+    left: 475px;
+    top: 30px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+.container .intro ul {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    font-size: 12px;
+}
+.container .intro a {
+    color: blue;
+    text-decoration: none;

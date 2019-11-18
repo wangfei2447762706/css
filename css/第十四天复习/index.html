@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pic {
+            float: left;
+        }
+        .col{
+            /* overflow: hidden; */
+            border: 2px solid black;
+        }   
+        .col::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* 前 */
+        .emm::before{
+            content: "喵呜";
+        }
+
+        /* 后 */
+        .emm::after{
+            content:"喵呆";
+        }
+
+.red{
+    width: 300px;
+    height: 300px;
+    background: red;
+    visibility: hidden;  
+     /* 隐藏看不见，占文档流 */
+ 
+}
+.black{
+    width: 300px;
+    height: 300px;
+    background: black;
+    display: none;
+    /* 隐藏看不见，不占文档流 */
+}
+
+
+
+        /* 为了浮动公用，用一个公用的class名去命名  clearfix 
+        .clearfix::after{
+            content:"";
+            display:block;
+            clear:both;
+            font-size:0;
+            height:0;
+            overflow:hidden;
+            visibility:hidden;
+
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <!-- float:left; float:right; float:none;
+    浮动为了让元素在一行显示；
+    同时左浮动，按照正常HTML结构顺序排列，同时有浮动，相反 -->
+    <!-- 浮动的子元素外面套一个div, 给div清除浮动产生的影响 
+    clear:both 专门提供用来清除浮动的属性
+    -->
+    <div>
+        <div class="col">
+        <div class="pic">
+            <img src="images/404.jpg" alt="">
+        </div>
+        <div class="txt">饿么么么额么么么么</div>
+    </div>
+        <ul>
+            <li>饿么么么额么么么么</li>
+            <li>饿么么么额么么么么</li>
+            <li>饿么么么额么么么么</li>
+            <li>饿么么么额么么么么</li>
+            <li>饿么么么额么么么么</li>
+            <li>饿么么么额么么么么</li>
+        </ul>
+    </div>
+
+
+
+    <div class="emm">
+        <span>喵喵</span>
+    </div>
+
+
+    <div class="red"></div>
+    <div class="black"></div>
+</body>
+
+</html>

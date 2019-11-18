@@ -1,0 +1,22 @@
+body{margin: 0;
+background-color: gray;}
+h1 {
+    color: white;
+    background-color: coral;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+img {
+    float: left;
+    border: 1px black dashed;
+    margin: 5px;
+}
+p{font-size: 12px;
+text-indent: 2em;
+line-height: 1.5;
+padding:5px;}
+#p1{border-right: 6px green  double;}
+#p2{border-right: 6px red  double;}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- header HTML5新增标签
+           头部header
+         底部footer
+          main主体
+          划分块 section=div
+          导航 nav
+    设计稿的尺寸
+    iphone5 320*568  DPR：2.0  尺寸  640*1136
+    iphone6 375*667  DPR  2.0  尺寸   750-1334（最常用）
+    iphone6p  414*736 DPR  3.0 尺寸   1242*2208
+    -->
+    <header>
+        <h1 class="logo">
+            <a href="#"></a>
+        </h1>
+        <div class="menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </div>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+   
+
+    <!-- main  section等同于div-->
+    <main class="content">
+        <!-- 一个内容模块 -->
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-one">
+            <div class="one">
+                <img src="images/l-logo.png" alt="">
+                <p>首页</p>
+            </div>
+            <div class="two">
+                <img src="images/c-logo.png" alt="">
+                <p>我的课程</p>
+            </div>
+            <div class="three">
+                <img src="images/r-logo.png" alt="">
+                <p>个人中心</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/swiper.min.js"> </script>
+     <!-- 引入初始化参数配置 -->
+     <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,//用户操作之后，自动播放效果结束 ，轮播效果 true暂停， false开启
+            },
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })        
+    </script>
+    <script type="text/javascript">
+        // 动态判断rem的大小
+        // desW=640 设计稿的大小  一套设计稿适配所有机型 单位rem 移动端适配专用
+        function refreshRem() {
+            var desW = 640,
+                winW = document.documentElement.clientWidth,
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+
+  
+</body>
+
+</html>

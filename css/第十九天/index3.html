@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pic{
+            position: relative;
+
+        
+        }
+    .pic img{
+        width: 400px;
+        height: 200px;
+    }
+
+    .pic1{
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top:300px;
+        left: 100px;
+        transform: rotate(0deg);
+        transform-origin: left top;
+        transition: all 1s ease  ;
+
+    }
+    .pic1 img{
+        transform:rotate(90deg);
+    }
+    .pic:hover .pic1{
+        transform: rotate(-90deg);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="images/1.jpg" alt="">
+        <div class="pic1">
+
+            <img src="images/3.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

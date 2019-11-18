@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+.content {
+    height: 100%;
+}
+
+.item {
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+.content{margin-left:-10px;}
+.item:nth-child(2n+1) {
+    background-color: blue;
+}
+
+.item:nth-child(2n) {
+    background-color:green;
+}

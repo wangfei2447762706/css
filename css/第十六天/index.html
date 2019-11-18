@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <tile>Document</title>
+    <style>
+        /* 圆角：左上  右上  右下  左下  顺时针方向 */
+        /* 1个取值：四个角都是一样
+        2个取值：左上=右下  右上=左下 */
+        /* 3个取值：左上 右上=左下  右下 
+        圆形形状:border-radius:50%*/
+        /* 上半圆：宽度是高度的2倍
+        左半圆：高度是宽度的2倍 */
+        /* css属性 阴影 box-shadow 
+        1.x轴的（水平）的偏移量、正值往右 负值往左  可以负值 2.y轴的（垂直）的偏移量 正值往下 负值往上  可以负值 
+        3.阴影的模糊半径  值越大越模糊 不能负值
+        4.阴影的扩展半径 阴影面积变大  不能取负值 
+        5.阴影的颜色   rgba(0,0,0,.5) alpha 透明度*/
+        /* 6.内阴影 inset */
+
+        /* 文字阴影 text-shadow
+        1.x轴的偏移量
+        2.y轴的偏移量
+        3.模糊半径
+        4.阴影颜色 */
+
+
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            border-radius: 50%;
+        }
+
+        .box11 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin:0px 20px;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 10px 7px 19px rgba(0, 0, 0, 1.5) ;
+            margin-left: 
+            50px;
+           
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background: red;
+            border-radius: 200px 200px 0 0;
+            border: 2px solid black;
+
+        }
+
+        .box4 {
+            width: 200px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 200px 200px;
+            border: 2px solid black;
+            border-top: none;
+        }
+
+        .box6 {
+            width: 30px;
+            height: 30px;
+            background: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 85px;
+            left: 85px;
+        }
+
+        .box7 {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 95px;
+            left: 95px;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 200px;
+            border-radius: 200px 0 0 200px;
+            background: blue;
+        }
+
+
+
+
+
+        div{
+            font-size: 100px;
+            font-weight: bold;
+            color: blue;
+            text-shadow: 0 0 10px rgba(0, 0, 0,.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <div class="box1"></div>
+
+    <div class="box11">
+        <div class="box2"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="box11">
+        <div class="box2"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="box11">
+        <div class="box2"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="box11">
+        <div class="box2"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="box11">
+        <div class="box2"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="box3"></div>
+
+
+
+    <div>
+        喵呜
+    </div>
+</body>
+
+</html>

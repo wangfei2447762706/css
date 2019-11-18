@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background: url(images/404.jpg) no-repeat;
+            /* 圆角属性 50% 让正方形变成圆形 */
+            border-radius: 50%;
+            animation-name: box;
+            /* 运动名称 */
+            animation-duration: 5s;
+            /* 运动持续时间 */
+            animation-timing-function: ease;
+            /* 运动曲线：匀速 */
+            animation-delay: 1s;
+            /* 运动延迟 1s */
+            animation-iteration-count: infinite;
+            /* 运动次数  无限次 */
+            animation-direction: alternate;
+            /* 运动方向  交替运动 */
+            animation-fill-mode: forwards;
+            /* 动画结束状态；结束帧的地方 */
+
+        }
+
+        /* 通过@keyframes指定好动画名称：名称自己定义
+    0%=from=开始帧   100%=to=结束帧
+    transform   变换  translate(x,y) 位移  scale()缩放 没有单位
+    rotate(deg)旋转*/
+        @keyframes box {
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(1.5);
+            }
+
+            50% {
+                transform: translate(0, 500px) rotate(360deg) scale(1.2);
+            }
+
+            75% {
+                transform: translate(450px, 0) rotate(360deg) scale(0.8);
+            }
+
+            100% {
+                transform: translate(0, 1000px) rotate(360deg) scale(0.5);
+            }
+        }
+
+
+
+
+        .fox {
+            float: right;
+            width: 400px;
+            height: 400px;
+            background: url(images/404.jpg) no-repeat;
+            /* 圆角属性 50% 让正方形变成圆形 */
+            border-radius: 50%;
+            animation-name: fox;
+            /* 运动名称 */
+            animation-duration: 5s;
+            /* 运动持续时间 */
+            animation-timing-function: ease;
+            /* 运动曲线：匀速 */
+            animation-delay: 1s;
+            /* 运动延迟 1s */
+            animation-iteration-count: infinite;
+            /* 运动次数  无限次 */
+            animation-direction: alternate;
+            /* 运动方向  交替运动 */
+            animation-fill-mode: forwards;
+            /* 动画结束状态；结束帧的地方 */
+
+        }
+
+        /* 通过@keyframes指定好动画名称：名称自己定义
+    0%=from=开始帧   100%=to=结束帧
+    transform   变换  translate(x,y) 位移  scale()缩放 没有单位
+    rotate(deg)旋转*/
+        @keyframes fox {
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(0.5);
+            }
+
+            50% {
+                transform: translate(0, -500px) rotate(-240deg) scale(0.8);
+            }
+
+            75% {
+                transform: translate(-450px, 0) rotate(-180deg) scale(1.2);
+            }
+
+
+            100% {
+                transform: translate(0, -1000px) rotate(-360deg) scale(1.5);
+            }
+        }
+
+        /* 雪碧图取负值 
+雪碧图需要取steps（） 函数动画
+水平
+  @keyframes 函数动画{
+            0%{background-position: 0 0;}
+            100%{background-position:-宽度 0;}
+        }
+垂直
+  @keyframes 函数动画{
+            0%{background-position: 0 0;}
+            100%{background-position: 0 -高度;}
+
+        }
+*/
+        .read {
+            float: right;
+            width: 200px;
+            height: 321px;
+            background: url(images/4.png) no-repeat;
+            background-position: 0 0;
+            animation: read 3s steps(10) infinite alternate;
+        }
+
+        @keyframes read {
+            0% {
+                background-position: 0 0;
+                transform: translate(0, 0) rotate(180deg);
+               
+            }
+
+            100% {
+                background-position: -2000px 0;
+                transform: translate(-1000px, 0)rotate(360deg)
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+    </div>
+    <div class="read">
+
+        </div>
+        <div class="read">
+    
+        </div>
+
+
+    <div class="box">
+
+    </div>
+    <div class="fox">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="fox">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="fox">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="fox">
+
+    </div>
+</body>
+
+</html>

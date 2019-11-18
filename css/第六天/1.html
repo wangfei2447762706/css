@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* border-collapse: collapse;去掉table的间隙*/
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* 奇数行 2n+1/odd
+        偶数行 2n / even */
+        tr:nth-child(2n+1) {
+            background-color: blue;
+        }
+
+        tr:nth-child(2n) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 单元表格  tr行   td列 th 加粗居中(标题)
+    border边框线   cellpadding单元格的内填充
+caption table表格的标题-->
+    <table border="1" cellpadding="10">
+        <caption>学生信息</caption>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>三三</td>
+            <td>女</td>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>三三</td>
+            <td>女</td>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>三三</td>
+            <td>女</td>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>三三</td>
+            <td>女</td>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>性别</th>
+        </tr>
+    </table>
+</body>
+
+</html>
